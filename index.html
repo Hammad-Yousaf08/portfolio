@@ -1,188 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engr Hammad Yousaf | Portfolio</title>
+    <title>Engr Hammad Yousaf | DevOps & MLOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0b0d17; color: white; scroll-behavior: smooth; }
-        .neon-glow { box-shadow: 0 0 20px rgba(34, 211, 238, 0.4); }
-        .glass-card { background: #161b22; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }
-        .glass-card:hover { border-color: rgba(34, 211, 238, 0.4); transform: translateY(-5px); }
-        .gradient-text { background: linear-gradient(90deg, #22d3ee, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Inter', sans-serif; background-color: #0b0d17; color: white; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #00c8ff, #00cf91); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 bg-[#0b0d17]/80 backdrop-blur-md border-b border-white/5 px-8 py-4">
+    <nav class="fixed w-full z-50 bg-[#0b0d17]/80 backdrop-blur-md border-b border-white/5 px-10 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <span class="bg-cyan-500/20 text-cyan-400 p-2 rounded font-bold">HY</span>
-                <span class="font-bold text-lg">Engr Hammad Yousaf</span>
+                <div class="bg-[#00cf91] text-black font-bold px-2 py-1 rounded text-sm">HY</div>
+                <span class="font-bold text-lg tracking-tight">Engr Hammad Yousaf</span>
             </div>
-            <div class="hidden md:flex gap-8 text-sm text-gray-400">
-                <a href="#about" class="hover:text-white">About</a>
-                <a href="#skills" class="hover:text-white">Skills</a>
-                <a href="#projects" class="hover:text-white">Projects</a>
-                <a href="#certifications" class="hover:text-white">Certifications</a>
-                <a href="#contact" class="hover:text-white">Contact</a>
+            <div class="hidden md:flex gap-8 text-sm text-gray-400 font-medium">
+                <a href="#about" class="hover:text-[#00c8ff] transition">About</a>
+                <a href="#skills" class="hover:text-[#00c8ff] transition">Skills</a>
+                <a href="#projects" class="hover:text-[#00c8ff] transition">Projects</a>
+                <a href="#certifications" class="hover:text-[#00c8ff] transition">Certifications</a>
+                <a href="#contact" class="hover:text-[#00c8ff] transition">Contact</a>
             </div>
-            <button onclick="window.open('https://www.linkedin.com/in/engr-hammad-yousaf-9b8b00311/', '_blank')"
-                    class="bg-cyan-400 text-black px-6 py-2 rounded-lg font-bold neon-glow transition-all hover:scale-105 active:scale-95 cursor-pointer">
-                Let's Talk
-            </button>
+            <a href="#contact" class="bg-[#00c8ff] text-black px-5 py-2 rounded-lg font-bold text-sm hover:bg-[#00cf91] transition">Let's Talk</a>
         </div>
     </nav>
 
-    <section class="pt-40 pb-20 px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-            <div class="inline-flex items-center gap-2 border border-green-500/30 bg-green-500/10 px-3 py-1 rounded-full text-xs text-green-400 mb-6">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Open to Remote Opportunities
-            </div>
-            <h1 class="text-6xl font-extrabold leading-tight mb-6">DevOps & <span class="gradient-text">MLOps Engineer</span></h1>
-            <p class="text-xl text-gray-300 mb-8">Building production infrastructure across AWS, Digital Ocean, GCP & Alibaba Cloud</p>
-            <div class="flex gap-4 mb-12">
-                <a href="#projects" class="bg-cyan-400 text-black px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-cyan-300 transition-all">
-                    View Projects <span>→</span>
-                </a>
-                <a href="#contact" class="border border-gray-700 px-8 py-3 rounded-lg font-bold text-white hover:bg-white/5 transition-all">
-                    Get in Touch
-                </a>
-            </div>
-            <div class="flex gap-12">
-                <div><h3 class="text-3xl font-bold text-cyan-400">20+</h3><p class="text-xs text-gray-500 uppercase">Deploys</p></div>
-                <div><h3 class="text-3xl font-bold text-green-400">99.8%</h3><p class="text-xs text-gray-500 uppercase">Uptime</p></div>
-                <div><h3 class="text-3xl font-bold">4</h3><p class="text-xs text-gray-500 uppercase">Clouds</p></div>
-            </div>
-        </div>
-        <div>
-            <img src="./images/main.png" alt="Hero Illustration" class="rounded-3xl shadow-2xl">
+    <section class="pt-40 pb-20 px-10 text-center">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-[#00cf91] font-mono text-sm mb-4 tracking-widest uppercase">— LET'S CONNECT —</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Ready to Build <span class="gradient-text">Reliable Infrastructure?</span></h1>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Open to remote DevOps & MLOps opportunities with companies building scalable, production-grade systems.</p>
         </div>
     </section>
 
-    <section id="about" class="py-24 bg-[#0d1117]/50 px-8">
+    <section id="projects" class="py-20 px-10 bg-[#0d0f1a]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-start">
-                <div class="relative group">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/10 to-transparent rounded-full blur-3xl opacity-30"></div>
-                    <div class="relative overflow-visible">
-                        <img src="images/aboutme.png" alt="About Engr Hammad Yousaf" class="w-full h-auto block object-contain">
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-[#0b1117]/90 backdrop-blur-md border border-cyan-500/30 p-5 rounded-2xl shadow-2xl z-20">
-                        <p class="text-3xl font-extrabold text-cyan-400">1.5</p>
-                        <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em] font-bold leading-tight">Years of Production<br>Experience</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="h-[1px] w-10 bg-cyan-400"></div>
-                        <p class="text-cyan-400 font-bold text-xs tracking-[0.3em] uppercase">About Me</p>
-                    </div>
-                    <h2 class="text-4xl lg:text-5xl font-bold mb-8 leading-tight">From Traditional DevOps to <br><span class="text-cyan-400">Multi-Cloud & MLOps</span></h2>
-                    <div class="space-y-5 text-gray-300 leading-relaxed text-sm mb-12">
-                        <p>Over the past <span class="text-white font-bold text-base">1.5 years</span>, I've built and maintained production infrastructure serving real users across SaaS, ERP, and blockchain applications.</p>
-                        <p>I've deployed <span class="text-cyan-400 font-bold">ERPNext</span> for Middle East clients and architected infrastructure for the <span class="text-cyan-400 font-bold">PlayDeFi blockchain project</span>.</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-12">
-                        <div class="flex items-start gap-4">
-                            <div class="mt-1 bg-green-500/10 p-1.5 rounded-full border border-green-500/20">
-                                <svg class="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
-                            </div>
-                            <div><h4 class="text-sm font-bold text-green-400 uppercase">Production-Ready</h4><p class="text-[11px] text-gray-400 mt-2">Every deployment is monitored and secured.</p></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div class="space-y-8">
+                    <div>
+                        <span class="bg-[#00c8ff]/10 text-[#00c8ff] text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">SaaS Platform</span>
+                        <h2 class="text-3xl font-bold mt-4 mb-6">HSE Multi-Environment Production Deployment</h2>
+                        
+                        <div class="space-y-4">
+                            <h4 class="text-[#00cf91] text-sm font-bold flex items-center gap-2">
+                                <span>✕</span> Implementation
+                            </h4>
+                            <ul class="text-gray-400 text-sm space-y-3 pl-4 border-l border-white/10">
+                                <li>Designed VPC architecture with public and private subnets across multiple availability zones.</li>
+                                <li>Deployed private RDS PostgreSQL in isolated subnets with Multi-AZ for redundancy.</li>
+                                <li>Setup Application Load Balancer with health checks and Auto Scaling groups (2-6 instances).</li>
+                                <li>Built CI/CD pipeline using GitHub Actions with self-hosted runners.</li>
+                                <li>Secured infrastructure with security groups, NACLs, and IAM role-based access control.</li>
+                            </ul>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="mt-1 bg-green-500/10 p-1.5 rounded-full border border-green-500/20">
-                                <svg class="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
-                            </div>
-                            <div><h4 class="text-sm font-bold text-green-400 uppercase">Multi-Cloud</h4><p class="text-[11px] text-gray-400 mt-2">Expertise in AWS, Azure, and GCP.</p></div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded text-[10px] text-gray-400 uppercase">AWS EC2</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded text-[10px] text-gray-400 uppercase">RDS</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded text-[10px] text-gray-400 uppercase">VPC</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded text-[10px] text-gray-400 uppercase">Docker</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <span class="text-pink-500">📈</span>
+                            <span class="text-xs text-gray-300">99.8% Uptime</span>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <span class="text-yellow-500">⚡</span>
+                            <span class="text-xs text-gray-300">70% Faster Deploys</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="space-y-6">
+                    <div class="glass-card p-2 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="image_eacd7c.png" alt="EMSConnect Architecture" class="w-full rounded-xl">
+                    </div>
+                    <div class="glass-card p-2 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="image_eac21f.jpg" alt="ERPNext Architecture" class="w-full rounded-xl">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-24 px-8 bg-[#0d1117]">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <p class="text-cyan-400 font-bold text-sm tracking-widest uppercase mb-4">—— Core Expertise</p>
-                <h2 class="text-5xl font-bold">Technical <span class="text-cyan-400">Skills</span></h2>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass-card p-8 rounded-2xl">
-                    <h4 class="text-lg font-bold mb-4 uppercase text-sm text-cyan-400">Cloud Architecture</h4>
-                    <ul class="space-y-2 text-xs text-gray-400">
-                        <li>› VPC Design & Isolation</li>
-                        <li>› EC2, RDS, S3</li>
-                        <li>› ALB & Auto Scaling</li>
-                    </ul>
+    <section id="contact" class="py-20 px-10">
+        <div class="max-w-5xl mx-auto glass-card rounded-3xl p-12 grid md:grid-cols-2 gap-12 border border-white/10">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Looking for a DevOps & MLOps Engineer?</h3>
+                <p class="text-gray-400 mb-8">I'm exploring remote opportunities where I can contribute to building scalable cloud infrastructure, automating deployments, and maintaining high-availability production systems.</p>
+                <div class="space-y-4 text-sm text-gray-300">
+                    <div class="flex items-center gap-3">📍 <span class="text-gray-500">Remote (US/Europe preferred)</span></div>
+                    <div class="flex items-center gap-3">🕒 <span class="text-gray-500">Available for full-time roles</span></div>
+                    <div class="flex items-center gap-3">💼 <span class="text-gray-500">1.5 years production experience</span></div>
                 </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <h4 class="text-lg font-bold mb-4 uppercase text-sm text-green-400">Containers</h4>
-                    <ul class="space-y-2 text-xs text-gray-400">
-                        <li>› Kubernetes (EKS)</li>
-                        <li>› Docker Containerization</li>
-                        <li>› Helm Charts</li>
-                    </ul>
-                </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <h4 class="text-lg font-bold mb-4 uppercase text-sm text-purple-400">Automation</h4>
-                    <ul class="space-y-2 text-xs text-gray-400">
-                        <li>› GitHub Actions</li>
-                        <li>› Terraform (IaC)</li>
-                        <li>› Python Scripting</li>
-                    </ul>
-                </div>
-                <div class="glass-card p-8 rounded-2xl">
-                    <h4 class="text-lg font-bold mb-4 uppercase text-sm text-yellow-400">MLOps</h4>
-                    <ul class="space-y-2 text-xs text-gray-400">
-                        <li>› Model Serving (FastAPI)</li>
-                        <li>› GPU Optimization</li>
-                        <li>› ML Pipelines</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-24 px-8 bg-[#0b0d17]">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl font-bold">Featured <span class="text-cyan-400">Deployments</span></h2>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-                <div>
-                    <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase">SaaS Platform</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-6">HSE Multi-Environment Deployment</h3>
-                    <p class="text-gray-400 text-sm mb-6">Designed high-availability architecture on AWS with zero-downtime CI/CD pipelines.</p>
-                    <div class="flex gap-4">
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded">AWS</span>
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded">Docker</span>
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded">GitHub Actions</span>
+            <div class="space-y-4">
+                <div class="bg-[#161b22] p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-500/10 rounded flex items-center justify-center text-blue-400">✉️</div>
+                    <div>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold">Email</p>
+                        <p class="text-sm">hammadyousaf842@gmail.com</p>
                     </div>
                 </div>
-                <div class="glass-card p-2 rounded-2xl">
-                    <img src="./images/ERPNext.png" alt="Project" class="rounded-xl w-full">
+                <div class="bg-[#161b22] p-4 rounded-xl border border-white/5 flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-400/10 rounded flex items-center justify-center text-blue-400 text-xl font-bold">in</div>
+                    <div>
+                        <p class="text-[10px] text-gray-500 uppercase font-bold">LinkedIn</p>
+                        <p class="text-sm">Engr Hammad Yousaf</p>
+                    </div>
                 </div>
+                <button class="w-full bg-[#00c8ff] text-black font-bold py-4 rounded-xl mt-4 hover:scale-[1.02] transition">📩 SEND ME AN EMAIL</button>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-8 bg-[#0d1117]">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">Ready to Scale Your Infrastructure?</h2>
-            <p class="text-gray-400 mb-12">I'm currently open to new projects and remote opportunities.</p>
-            <a href="mailto:your-email@example.com" class="bg-cyan-400 text-black px-10 py-4 rounded-xl font-bold neon-glow inline-block hover:scale-105 transition-all">
-                Send me an Email
-            </a>
-        </div>
-    </section>
+    <footer class="bg-[#0b0d17] pt-24 pb-8 px-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
+                <div class="md:col-span-5 space-y-5">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#00cf91]/10 border border-[#00cf91]/20 rounded-lg flex items-center justify-center text-[#00cf91] font-bold text-sm">HY</div>
+                        <span class="text-[#00c8ff] font-bold text-xl tracking-tight">Engr Hammad Yousaf</span>
+                    </div>
+                    <p class="text-gray-400 italic text-sm font-medium">Infrastructure as Art</p>
+                    <p class="text-gray-500 text-[13px] leading-relaxed max-w-xs">Building secure, scalable, and automated cloud infrastructure solutions.</p>
+                </div>
 
-    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
-        <p>© 2026 Engr Hammad Yousaf. Built with Passion & Cloud.</p>
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-bold text-[14px] mb-6 tracking-wide">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-500 hover:text-[#00c8ff] text-[13px]">About</a></li>
+                        <li><a href="#skills" class="text-gray-500 hover:text-[#00c8ff] text-[13px]">Skills</a></li>
+                        <li><a href="#projects" class="text-gray-500 hover:text-[#00c8ff] text-[13px]">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-500 hover:text-[#00c8ff] text-[13px]">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4">
+                    <h4 class="text-white font-bold text-[14px] mb-6 tracking-wide">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:border-[#00c8ff] hover:text-[#00c8ff] transition">LinkedIn</a>
+                        <a href="#" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:border-[#00c8ff] hover:text-[#00c8ff] transition">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center text-gray-600 text-[12px]">
+                <p>© 2025 Engr Hammad Yousaf. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
