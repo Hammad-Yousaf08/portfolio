@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +43,7 @@
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Open to Remote Opportunities
             </div>
             <h1 class="text-6xl font-extrabold leading-tight mb-6">DevOps & <span class="gradient-text">MLOps Engineer</span></h1>
-            <p class="text-xl text-gray-300 mb-8">Building production infrastructure across AWS,Digital Ocean, GCP & Alibaba Cloud</p>
+            <p class="text-xl text-gray-300 mb-8">Building production infrastructure across AWS, Digital Ocean, GCP & Alibaba Cloud</p>
             <div class="flex gap-4 mb-12">
     <a href="#projects" class="bg-cyan-400 text-black px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-cyan-400 transition-all">
         View Projects <span>→</span>
@@ -144,7 +143,7 @@
                         </div>
                         <div>
                             <h4 class="text-sm font-bold text-green-400 uppercase tracking-tight">Automation & CI/CD</h4>
-                            <p class="text-[11px] text-gray-400 mt-2 leading-relaxed">Built self-hosted Github Actions runners and automated deployment piplelines</p>
+                            <p class="text-[11px] text-gray-400 mt-2 leading-relaxed">Built self-hosted Github Actions runners and automated deployment pipelines</p>
                         </div>
                     </div>
                 </div>
@@ -172,7 +171,7 @@
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> EC2, RDS (Multi-AZ), S3</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> ALB, Auto Scaling, Route53</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> IAM, Security Groups, NACLs</li>
-                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> CloudWatch & CCost Optimization</li>
+                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> CloudWatch & Cost Optimization</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Multi-Region Architecture</li>
                     </ul>
                 </div>
@@ -202,7 +201,7 @@
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Helm Charts & Deployments</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Pod Auto-scaling (HPA)</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Service Discovery & Networking</li>
-                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Container Security & Image Scanning Best Practices</li>
+                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Container Security & Image Scanning</li>
                     </ul>
                 </div>
 
@@ -213,7 +212,7 @@
                     <h4 class="text-lg font-bold mb-4 uppercase text-sm tracking-tight">CI/CD & Automation</h4>
                     <ul class="space-y-3 text-xs text-gray-400">
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> GitHub Actions (Self-Hosted)</li>
-                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Dockeer Build Pipelines</li>
+                        <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Docker Build Pipelines</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Automated Testing Integration</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Blue-Green & Canary Deployments</li>
                         <li class="flex items-start gap-2"><span class="text-cyan-400">›</span> Infrastructure as Code (Terraform)</li>
@@ -296,517 +295,43 @@
                 <h2 class="text-5xl font-bold">Real Production <span class="text-cyan-400">Deployments</span></h2>
             </div>
 
+            <!-- Project 1: HSE SaaS -->
             <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
                 <div>
                     <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">SaaS Platform</span>
                     <h3 class="text-3xl font-bold mt-4 mb-6 italic">HSE Multi-Environment Production Deployment</h3>
                     <div class="space-y-4 mb-8">
-                        <p class="text-cyan-400 font-bold text-xs flex items-center gap-2"><span>✕</span> Implementation</p>
+                        <p class="text-cyan-400 font-bold text-xs flex items-center gap-2"><span>⚙️</span> Implementation</p>
                         <ul class="text-xs text-gray-400 space-y-3 list-none border-l border-white/5 pl-4">
                             <li>› Designed VPC architecture with public and private subnets across multiple availability zones.</li>
                             <li>› Deployed private RDS PostgreSQL in isolated subnets with Multi-AZ for database redundancy.</li>
                             <li>› Setup Application Load Balancer with health checks and Auto Scaling groups (2-6 instances).</li>
                             <li>› Built CI/CD pipeline using GitHub Actions with self-hosted runners.</li>
-                            <li>› Configured separate environments with environment-specific configurations and secrets management</li>
-                            <li>Implemented CloudWatch monitoring and alerting for application and infrastructure metrics</li>
+                            <li>› Configured separate environments with environment-specific configurations and secrets management.</li>
+                            <li>› Implemented CloudWatch monitoring and alerting for application and infrastructure metrics.</li>
                             <li>› Secured infrastructure with security groups, NACLs, and IAM role-based access control.</li>
                         </ul>
                     </div>
                     <div class="mb-10">
-                        <div>
-                        <h5 class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
-                        Tech Stack
-                        </h5>
-                        </div>
+                        <h5 class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">Tech Stack</h5>
                         <div class="flex flex-wrap gap-3">
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">AWS EC2</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">RDS</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">ALB</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">VPC</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Auto Scalling</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">GitHub Actions</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Docker</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">CloudWatch</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Docker</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">AWS EC2</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">RDS</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">ALB</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">VPC</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Auto Scaling</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">GitHub Actions</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Docker</span>
+                            <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">CloudWatch</span>
                         </div>
                     </div>   
-                  <div class="grid grid-cols-2 gap-4">
-   
-                    <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                      <span class="text-green-400 text-xs">📈</span> 
-                      <span class="text-[10px] font-medium text-gray-300">99.8% uptime</span>
-                          </div>
-
-                       <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                    <span class="text-cyan-400 text-xs">⚡</span> 
-                    <span class="text-[10px] font-medium text-gray-300">70% faster deploys</span>
-                       </div>
-
-                      <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                          <span class="text-green-400 text-xs">🌐</span> 
-                          <span class="text-[10px] font-medium text-gray-300">3 Environments</span>
-                      </div>
-
-                         <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                         <span class="text-cyan-400 text-xs">🛡️</span> 
-                        <span class="text-[10px] font-medium text-gray-300">Zero Downtime</span>
-                     </div>
-
-                    </div>
-                    
-                </div>
-                <div class="relative group">
-                   <div class="relative glass-card p-2 rounded-2xl border border-white/10 overflow-hidden bg-[#0a0f18]">
-    <img src="./images/ERPNext.png" 
-         alt="Blockchain Infrastructure" 
-         class="rounded-xl w-full h-auto object-contain block">
-</div>
-             <div class="relative glass-card p-2 rounded-2xl border border-white/10 overflow-hidden">
-    <img src="./images/ERPNext.png" 
-         alt="Blockchain Infrastructure" 
-         class="rounded-xl w-full h-full object-cover aspect-video block">
-</div>
-                <div class="order-1 lg:order-2">
-                    <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">ERP System</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-6 italic">ERPNext Production Deployment for Middle  East Clients</h3>
-                    <div class="space-y-4 mb-8">
-                        <p class="text-cyan-400 font-bold text-xs flex items-center gap-2"><span>🛠</span> Implementation</p>
-                        <ul class="text-xs text-gray-400 space-y-3 list-none border-l border-white/5 pl-4">
-                            <li> Deployed ERPNext on AWS EC2 with Nginx reverse proxy and SSL certificate configuration</li>
-                            <li>› Set up MariaDB with automated daily backups and point-in-time recovery capability</li>
-                            <li>› Configured Redis for caching and background job processing with Celery workers</li>
-                            <li>› Implemented systemd services for automatic process management and restart on failure</li>
-                            <li>› Optimized database queries and configured proper indexing for faster report generation</li>
-                            <li>› Set up CloudWatch monitoring for system resources and application performance</li>
-                        </ul>
-                    </div>
-                    <div class="mb-10">
-                        <div>
-                        <h5 class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
-                        Tech Stack
-                        </h5>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">AWS EC2</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">ERPNext</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">MariaDB</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Nginx</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Redis</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Celery</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">SYStemd</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">CloudWatch</span>
-                        </div>
-                    </div> 
                     <div class="grid grid-cols-2 gap-4">
-   
-                    <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                      <span class="text-green-400 text-xs">📈</span> 
-                      <span class="text-[10px] font-medium text-gray-300">99.8% uptime</span>
-                          </div>
-
-                       <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                    <span class="text-cyan-400 text-xs">⚡</span> 
-                    <span class="text-[10px] font-medium text-gray-300">40% faster deploys</span>
-                       </div>
-
-                      <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                          <span class="text-green-400 text-xs">📈</span> 
-                          <span class="text-[10px] font-medium text-gray-300">Daily backups</span>
-                      </div>
-
-                         <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                         <span class="text-cyan-400 text-xs">👥</span> 
-                        <span class="text-[10px] font-medium text-gray-300">5+ clients served</span>
-                     </div>
-
-                    </div>
-                </div>
-            </div>
-            
-             <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-                <div>
-                    <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Blockchain</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-6 italic">PlayDeFi Blockchain Infrastructure Deployment</h3>
-                    <div class="space-y-4 mb-8">
-                        <p class="text-cyan-400 font-bold text-xs flex items-center gap-2"><span>✕</span> Implementation</p>
-                        <ul class="text-xs text-gray-400 space-y-3 list-none border-l border-white/5 pl-4">
-                            <li>› Deployed blockchain nodes on dedicated EC2 instances with optimized storage configuration.</li>
-                            <li>› Set up API gateway with rate limiting and caching for blockchain data queries.</li>
-                            <li>› Configured Docker containers for microservices architecture with service discovery.</li>
-                            <li>› Implemented load balancing across multiple API instances for high availability.</li>
-                            <li>› Set up monitoring for blockchain node synchronization and transaction processing.</li>
-                            <li>Configured automated backups for blockchain data and application state.</li>
-                            <li>› Implemented security measures including firewall rules and DDoS protection.</li>
-                            <li>› Implemented security measures including firewall rules and DDoS protection.</li>
-                        </ul>
-                    </div>
-                    <div class="mb-10">
-                        <div>
-                        <h5 class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
-                        Tech Stack
-                        </h5>
+                        <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
+                            <span class="text-green-400 text-xs">📈</span> 
+                            <span class="text-[10px] font-medium text-gray-300">99.8% uptime</span>
                         </div>
-                        <div class="flex flex-wrap gap-3">
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">AWS EC2</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Docker</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Nginx</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Blockchain Nodes</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">API Gateway</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">CloudWatch</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">S3</span>
+                        <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
+                            <span class="text-cyan-400 text-xs">⚡</span> 
+                            <span class="text-[10px] font-medium text-gray-300">70% faster deploys</span>
                         </div>
-                    </div>   
-                  <div class="grid grid-cols-2 gap-4">
-   
-                    <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                      <span class="text-green-400 text-xs">📈</span> 
-                      <span class="text-[10px] font-medium text-gray-300">Low latency</span>
-                          </div>
-
-                       <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                    <span class="text-cyan-400 text-xs">📈</span> 
-                    <span class="text-[10px] font-medium text-gray-300">High throughput</span>
-                       </div>
-
-                      <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                          <span class="text-green-400 text-xs">📈</span> 
-                          <span class="text-[10px] font-medium text-gray-300">99.7% uptime</span>
-                      </div>
-
-                         <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                         <span class="text-cyan-400 text-xs">📈</span> 
-                        <span class="text-[10px] font-medium text-gray-300">Scalable architecture</span>
-                     </div>
-
-                    </div>
-                    
-                </div>
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-10 group-hover:opacity-25 transition duration-1000"></div>
-                    <div class="relative glass-card p-2 rounded-2xl border border-white/10">
-                        <img src="./images/blockchain.png" alt="HSE Architecture" class="rounded-xl">
-                    </div>
-                </div>
-            </div>
-
-             <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-                <div class="order-2 lg:order-1 relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl blur opacity-10 group-hover:opacity-25 transition duration-1000"></div>
-                    <div class="relative glass-card p-2 rounded-2xl border border-white/10">
-                        <img src="./images/ERPNext.png" alt="Blockchain Infrastructure" class="rounded-xl">
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">MLOps</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-6 italic">ML Model Deployment with GPU Infrastructure</h3>
-                    <div class="space-y-4 mb-8">
-                        <p class="text-cyan-400 font-bold text-xs flex items-center gap-2"><span>🛠</span> Implementation</p>
-                        <ul class="text-xs text-gray-400 space-y-3 list-none border-l border-white/5 pl-4">
-                            <li> Deployed GPU-enabled EC2 instances (G4/P3) for ML model serving.</li>
-                            <li>› Containerized ML models using Docker with FastAPI endpoints for inference.</li>
-                            <li>› only deloy on the gpu based instance like g4dn.xlarge etc through pipelin etc.</li>
-                            <li>› Implemented model versioning and A/B testing capabilities for gradual rollouts.</li>
-                            <li>› Configured monitoring for inference latency, GPU utilization, and request throughput.</li>
-                            <li>› Built CI/CD pipeline for automated model deployment and rollback capabilities.</li>
-                            <li>› Implemented caching layer to reduce inference  costs and improve response times.</li>
-                        </ul>
-                    </div>
-                    <div class="mb-10">
-                        <div>
-                        <h5 class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
-                        Tech Stack
-                        </h5>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">AWS EC2 (GPU)</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Kubernetes</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Docker</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">FastAPI</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">GitHub Actions</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Prometheus</span>
-                        <span class="bg-cyan-500/5 border border-cyan-500/20 px-3 py-1 rounded text-[9px] text-cyan-300">Grafana</span>
-                        </div>
-                    </div> 
-                    <div class="grid grid-cols-2 gap-4">
-   
-                    <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                      <span class="text-green-400 text-xs">📈</span> 
-                      <span class="text-[10px] font-medium text-gray-300">200ms avg latency</span>
-                          </div>
-
-                       <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                    <span class="text-cyan-400 text-xs">⚡</span> 
-                    <span class="text-[10px] font-medium text-gray-300">40% uptime</span>
-                       </div>
-
-                      <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                          <span class="text-green-400 text-xs">📈</span> 
-                          <span class="text-[10px] font-medium text-gray-300">Auto-scalling</span>
-                      </div>
-
-                         <div class="bg-[#161b22]/50 border border-white/5 p-3 rounded-lg flex items-center gap-3">
-                         <span class="text-cyan-400 text-xs">👥</span> 
-                        <span class="text-[10px] font-medium text-gray-300">Cost optimized</span>
-                     </div>
-
-                    </div>
-                </div>
-            </div>
-            </div>
-
-        </div>
-    </section>
-
-  <section id="certifications" class="py-20 bg-[#0b0d17] px-6" x-data="{ 
-    activeTab: 'aws',
-    certs: {
-        aws: {
-            title: 'AWS Certified Solutions Architect – Associate',
-            platform: 'Amazon Web Services (AWS)',
-            desc: 'Validates expertise in designing cost-effective, fault-tolerant, and scalable distributed systems on AWS. Covers VPC architecture, EC2, RDS, IAM, ALB, Auto Scaling, and more.',
-            expected: 'Expected 2025',
-            icon: '☁️'
-        },
-        cka: {
-            title: 'Certified Kubernetes Administrator (CKA)',
-            platform: 'Cloud Native Computing Foundation',
-            desc: 'Focuses on installation, configuration, and management of production-grade Kubernetes clusters. Covering networking, storage, security, and troubleshooting.',
-            expected: 'Expected 2025',
-            icon: '☸️'
-        },
-        terraform: {
-            title: 'HashiCorp Certified: Terraform Associate',
-            platform: 'HashiCorp',
-            desc: 'Infrastructure as Code (IaC) principles using Terraform. Focuses on multi-cloud deployments, state management, and resource provisioning automation.',
-            expected: 'Expected 2024',
-            icon: '🏗️'
-        },
-        docker: {
-            title: 'Docker Certified Associate (DCA)',
-            platform: 'Docker / Mirantis',
-            desc: 'Advanced container orchestration, image management, security, and installation. Validating real-world skills in Docker Engine and Docker Swarm.',
-            expected: 'Expected 2024',
-            icon: '🐳'
-        }
-    }
-}">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <div class="flex justify-center items-center gap-3 mb-4">
-                <div class="h-[1px] w-8 bg-cyan-400"></div>
-                <p class="text-cyan-400 font-bold text-[10px] tracking-[0.4em] uppercase">Professional Certifications</p>
-                <div class="h-[1px] w-8 bg-cyan-400"></div>
-            </div>
-            <h2 class="text-3xl lg:text-4xl font-bold text-white">Certifications <span class="text-cyan-400">In Progress</span></h2>
-        </div>
-
-        <div class="max-w-4xl mx-auto bg-[#161b22]/40 border border-white/5 rounded-[24px] p-6 lg:p-10 mb-10 relative">
-            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-                <div class="w-20 h-20 flex-shrink-0 bg-[#0d1117] border border-white/10 rounded-2xl flex items-center justify-center text-4xl text-cyan-400 shadow-xl shadow-black">
-                   <span x-text="certs[activeTab].icon"></span>
-                </div>
-
-                <div class="flex-1">
-                    <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-3">
-                        <span class="bg-cyan-500/10 text-cyan-400 text-[9px] font-bold px-3 py-1 rounded-full border border-cyan-500/20 uppercase" x-text="certs[activeTab].platform"></span>
-                        <span class="bg-yellow-500/10 text-yellow-500 text-[9px] font-bold px-2 py-1 rounded-md border border-yellow-500/20 uppercase">🕒 In Progress</span>
-                    </div>
-                    
-                    <h3 class="text-xl lg:text-2xl font-bold text-white mb-3" x-text="certs[activeTab].title"></h3>
-                    <p class="text-gray-400 text-[13px] leading-relaxed mb-6" x-text="certs[activeTab].desc"></p>
-                    
-                    <div class="flex items-center justify-center md:justify-start gap-4 text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-6">
-                        <span class="text-yellow-500" x-text="'🕒 In Progress · ' + certs[activeTab].expected"></span>
-                        <span>🛡️ Credential: Pending</span>
-                    </div>
-
-                    <a href="#" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1a202c] border border-cyan-500/30 rounded-lg text-cyan-400 text-[11px] font-bold uppercase tracking-widest hover:bg-cyan-500 hover:text-black transition-all">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        View on LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            
-            <button @click="activeTab = 'aws'" :class="activeTab === 'aws' ? 'border-cyan-500/60 bg-[#161b22] ring-1 ring-cyan-500/20' : 'border-white/5 bg-[#161b22]/30'" class="p-4 rounded-xl border flex flex-col gap-3 transition-all hover:bg-[#161b22]/80 text-left group">
-                <div class="flex items-center gap-2">
-                    <span class="text-cyan-400 text-lg group-hover:scale-110 transition-transform">☁️</span>
-                    <span class="text-[8px] font-black text-yellow-500 uppercase tracking-tighter">🕒 In Progress</span>
-                </div>
-                <h4 class="text-[10px] font-bold text-gray-200 leading-tight">AWS Certified Solutions Architect – Associate</h4>
-            </button>
-
-            <button @click="activeTab = 'cka'" :class="activeTab === 'cka' ? 'border-cyan-500/60 bg-[#161b22] ring-1 ring-cyan-500/20' : 'border-white/5 bg-[#161b22]/30'" class="p-4 rounded-xl border flex flex-col gap-3 transition-all hover:bg-[#161b22]/80 text-left group">
-                <div class="flex items-center gap-2">
-                    <span class="text-green-400 text-lg group-hover:scale-110 transition-transform">☸️</span>
-                    <span class="text-[8px] font-black text-yellow-500 uppercase tracking-tighter">🕒 In Progress</span>
-                </div>
-                <h4 class="text-[10px] font-bold text-gray-200 leading-tight">Certified Kubernetes Administrator (CKA)</h4>
-            </button>
-
-            <button @click="activeTab = 'terraform'" :class="activeTab === 'terraform' ? 'border-cyan-500/60 bg-[#161b22] h-full ring-1 ring-cyan-500/20' : 'border-white/5 bg-[#161b22]/30'" class="p-4 rounded-xl border flex flex-col gap-3 transition-all hover:bg-[#161b22]/80 text-left group">
-                <div class="flex items-center gap-2">
-                    <span class="text-purple-400 text-lg group-hover:scale-110 transition-transform">🏗️</span>
-                    <span class="text-[8px] font-black text-yellow-500 uppercase tracking-tighter">🕒 In Progress</span>
-                </div>
-                <h4 class="text-[10px] font-bold text-gray-200 leading-tight">HashiCorp Certified: Terraform Associate</h4>
-            </button>
-
-            <button @click="activeTab = 'docker'" :class="activeTab === 'docker' ? 'border-cyan-500/60 bg-[#161b22] ring-1 ring-cyan-500/20' : 'border-white/5 bg-[#161b22]/30'" class="p-4 rounded-xl border flex flex-col gap-3 transition-all hover:bg-[#161b22]/80 text-left group">
-                <div class="flex items-center gap-2">
-                    <span class="text-cyan-400 text-lg group-hover:scale-110 transition-transform">🐳</span>
-                    <span class="text-[8px] font-black text-yellow-500 uppercase tracking-tighter">🕒 In Progress</span>
-                </div>
-                <h4 class="text-[10px] font-bold text-gray-200 leading-tight">Docker Certified Associate (DCA)</h4>
-            </button>
-
-        </div>
-
-        <div class="mt-10 text-center">
-            <a href="#" class="inline-flex items-center gap-2 px-5 py-2 border border-white/10 rounded-lg text-gray-500 text-[10px] font-bold uppercase tracking-widest hover:border-cyan-500/40 hover:text-cyan-400 transition-all">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                View All Certifications on LinkedIn
-            </a>
-        </div>
-    </div>
-</section>
-
-<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
-<section id="contact" class="py-24 bg-[#0d1117] px-8">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <div class="flex justify-center items-center gap-3 mb-4">
-                <div class="h-[1px] w-8 bg-cyan-400"></div>
-                <p class="text-cyan-400 font-bold text-[10px] tracking-[0.4em] uppercase">Let's Connect</p>
-                <div class="h-[1px] w-8 bg-cyan-400"></div>
-            </div>
-            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Build <span class="text-cyan-400">Reliable Infrastructure?</span></h2>
-            <p class="text-gray-400 text-sm">Open to remote DevOps & MLOps opportunities with companies building scalable, production-grade systems.</p>
-        </div>
-
-        <div class="max-w-4xl mx-auto bg-[#161b22]/50 border border-white/5 rounded-3xl p-8 lg:p-12">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-6">Looking for a DevOps & <br>MLOps Engineer?</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-8">I'm exploring remote opportunities where I can contribute to building scalable cloud infrastructure, automating deployments, and maintaining high-availability production systems.</p>
-                    
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-gray-300 text-[11px] font-medium">
-                            <span class="text-cyan-400">📍</span> Remote (US/Europe preferred)
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300 text-[11px] font-medium">
-                            <span class="text-cyan-400">🕒</span> Available for full-time roles
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-300 text-[11px] font-medium">
-                            <span class="text-cyan-400">💼</span> 1.5 years production experience
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="space-y-4">
-                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-4">Get in Touch</p>
-                    
-                    <a href="mailto: hammadyousaf842@gmail.com" class="flex items-center gap-4 p-4 bg-[#0d1117] border border-white/5 rounded-2xl hover:border-cyan-500/50 transition-all group">
-                        <div class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400 group-hover:scale-110 transition-transform">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div>
-                            <p class="text-[9px] text-gray-500 font-bold uppercase tracking-tighter">Email</p>
-                            <p class="text-sm text-gray-200 font-medium">hammadyousaf842@gmail.com</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/engr-hammad-yousaf-9b8b00311/" target="_blank" class="flex items-center gap-4 p-4 bg-[#0d1117] border border-white/5 rounded-2xl hover:border-cyan-500/50 transition-all group">
-                        <div class="p-3 bg-cyan-500/10 rounded-xl text-cyan-400 group-hover:scale-110 transition-transform">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </div>
-                        <div>
-                            <p class="text-[9px] text-gray-500 font-bold uppercase tracking-tighter">LinkedIn</p>
-                            <p class="text-sm text-gray-200 font-medium">Engr Hammad Yousaf</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/Hammad-Yousaf08/" target="_blank" class="flex items-center gap-4 p-4 bg-[#0d1117] border border-white/5 rounded-2xl hover:border-green-500/50 transition-all group">
-                        <div class="p-3 bg-green-500/10 rounded-xl text-green-400 group-hover:scale-110 transition-transform">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                        </div>
-                        <div>
-                            <p class="text-[9px] text-gray-500 font-bold uppercase tracking-tighter">GitHub</p>
-                            <p class="text-sm text-gray-200 font-medium">Hammad-Yousaf08/</p> 
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="mt-12 pt-12 border-t border-white/5 text-center">
-                <p class="text-xs text-gray-500 mb-6 italic">Interested in discussing a DevOps or MLOps role?</p>
-                <a href="mailto:hammadyousaf842@gmail.com" class="px-8 py-4 bg-cyan-400 text-[#0b0d17] font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-white transition-all shadow-lg shadow-cyan-400/20">
-                    📩 Send Me an Email
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-[#0b0d17] pt-24 pb-8 px-10 border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
-        
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
-            
-            <div class="md:col-span-5 space-y-5">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-[#00cf91]/10 border border-[#00cf91]/20 rounded-lg flex items-center justify-center text-[#00cf91] font-bold text-sm">
-                        HY
-                    </div>
-                    <span class="text-[#00c8ff] font-bold text-xl tracking-tight">Engr Hammad Yousaf</span>
-                </div>
-                <p class="text-gray-400 italic text-sm font-medium">
-                    Infrastructure as Art
-                </p>
-                <p class="text-gray-500 text-[13px] leading-relaxed max-w-xs">
-                    Building secure, scalable, and automated cloud infrastructure solutions
-                </p>
-            </div>
-
-            <div class="md:col-span-3">
-                <h4 class="text-white font-bold text-[14px] mb-6 tracking-wide">Quick Links</h4>
-                <ul class="space-y-3">
-                    <li><a href="#about" class="text-gray-500 hover:text-[#00c8ff] text-[13px] transition-colors">About</a></li>
-                    <li><a href="#skills" class="text-gray-500 hover:text-[#00c8ff] text-[13px] transition-colors">Skills</a></li>
-                    <li><a href="#projects" class="text-gray-500 hover:text-[#00c8ff] text-[13px] transition-colors">Projects</a></li>
-                    <li><a href="#certifications" class="text-gray-500 hover:text-[#00c8ff] text-[13px] transition-colors">Certifications</a></li>
-                    <li><a href="#contact" class="text-gray-500 hover:text-[#00c8ff] text-[13px] transition-colors">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="md:col-span-4">
-                <h4 class="text-white font-bold text-[14px] mb-6 tracking-wide">Connect</h4>
-                <div class="flex gap-4 mb-8">
-                    <a href="https://www.linkedin.com/in/engr-hammad-yousaf-9b8b00311/" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:border-[#00c8ff] hover:text-[#00c8ff] transition-all">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    <a href="https://github.com/Hammad-Yousaf08" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:border-[#00c8ff] hover:text-[#00c8ff] transition-all">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    </a>
-                    <a href="hammadyousaf842@gmail.com" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-gray-400 hover:border-[#00c8ff] hover:text-[#00c8ff] transition-all">
-                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </a>
-                </div>
-                <p class="text-gray-500 text-[13px] leading-relaxed">
-                    Let's collaborate on your next cloud infrastructure project
-                </p>
-            </div>
-        </div>
-
-        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-600 text-[12px] tracking-wide">
-            <p>© 2025 Engr Hammad Yousaf. All rights reserved.</p>
-          
-    </div>
-</footer>
-</body>
-</html>
+                        <div class="bg-[#161b22]/50 border border-white
